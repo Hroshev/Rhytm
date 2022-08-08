@@ -1,52 +1,55 @@
-header{
+header {
     margin-top: 52px;
     position: relative;
-    .header__container{
+    .header__container {
         margin-bottom: 220px;
-        .header__content{
+        @include tablet-min {
+            margin-bottom: 80px;
+        }
+        .header__content {
             margin-top: 146px;
             max-width: 469px;
             width: 100%;
-            @include tablet-min{
+            @include tablet-min {
                 margin-top: 110px;
-              }
-            h1{
+            }
+            h1 {
                 font-size: 56px;
-                font-family: 'CalSans', sans-serif;
+                font-family: "CalSans", sans-serif;
                 font-weight: 600;
                 color: $second-color;
-                @include phone{
+                @include phone {
                     font-size: 36px;
-                  }
-                span{
-                    color: #FF6428;
+                }
+                span {
+                    color: #ff6428;
                 }
             }
-            p{
+            p {
                 margin: 16px 0px 33px 0px;
                 max-width: 398px;
                 width: 100%;
             }
-            .header__inner{
+            .header__inner {
                 max-width: 312px;
                 width: 100%;
-                @include phone{
+                @include phone {
                     max-width: 250px;
-                  }
-                .header__inner-img{
+                }
+                .header__inner-img {
                     max-width: 80px;
                     width: 100%;
                 }
             }
         }
-        .header__absolute-img{
+        .header__absolute-img {
             position: absolute;
             top: -52px;
-            left: 55%;
+            left: 52%;
             z-index: -5;
-            @include tablet-min{
+            @include tablet-min {
                 display: none;
-              }
+            }
         }
     }
 }

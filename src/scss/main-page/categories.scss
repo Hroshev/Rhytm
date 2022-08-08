@@ -1,0 +1,69 @@
+.categories{
+    margin-bottom: 220px;
+    @include tablet-min {
+        margin-bottom: 80px;
+    }
+    h2 {
+        margin-bottom: 80px;
+        @include tablet-min {
+            margin-bottom: 40px;
+        }
+    }
+    .categories__wrapp{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+        @include tablet {
+            gap: 40px;
+            grid-template-columns: repeat(2, 220px);
+            justify-content: center;
+        }
+        @include tablet-min {
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+        }
+        @include phone {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .categories__wrapp-section{
+            margin: 0 auto;
+            position: relative;
+            width: 220px;
+            height: 280px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: opacity .2s linear;
+            &:nth-child(1){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 50%, rgba(0, 0, 0, 0.8) 100%), url("@img/categories/categories__acoustic.png") 0 0/cover no-repeat;
+            }
+            &:nth-child(2){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 50%, rgba(0, 0, 0, 0.8) 100%), url("@img/categories/categories__electric.png") 0 0/cover no-repeat;
+            }
+            &:nth-child(3){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 50%, rgba(0, 0, 0, 0.8) 100%), url("@img/categories/categories__basses.png") 0 0/cover no-repeat;
+            }
+            &:nth-child(4){
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 50%, rgba(0, 0, 0, 0.8) 100%), url("@img/categories/categories__collections.png") 0 0/cover no-repeat;
+            }
+            &:hover{
+                opacity: 0.6;
+            }
+            &:focus{
+                opacity: 1;
+            }
+            h3{
+                font-size: 20px;
+                font-weight: 600;
+                position: absolute;
+                top: 82%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                color: #fff;
+                z-index: 2;
+            }
+        }
+    }
+}

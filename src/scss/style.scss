@@ -45,6 +45,20 @@ body {
   align-items: center;
 }
 
+.title{
+  font-size: 44px;
+  font-family: 'CalSans', sans-serif;
+  font-weight: 600;
+  color: $second-color;
+  text-align: center;
+  @include tablet-min{
+    font-size: 26px;
+  }
+  span{
+    color: #FF6428;
+  }
+}
+
 .btn{
   font-size: 16px;
   padding: 18px 48px;
@@ -73,49 +87,15 @@ body {
 }
 
 @import "../scss/main-page/header.scss";
-
-
+@import "../scss/main-page/store.scss";
+@import "../scss/main-page/categories.scss";
+@import "../scss/main-page/brands.scss";
+@import "../scss/main-page/faq.scss";
+@import "../scss/main-page/reviews.scss";
+@import "../scss/main-page/application.scss";
 @import "../scss/main-page/footer.scss";
+
 
 /* JS modules */
 @import "../scss/modules/burger.scss";
 @import "../scss/modules/popup.scss";
-
-/* 
-@import "../scss/modules/popup.scss";
-@import "../scss/modules/burger.scss";
-@import "../scss/modules/swiper.scss"; 
-*/
-
-
-/* <---Наработки---> */
-
-//****HOVER****
-/* 
-transition: background-color .2s linear;
-&:hover {
-   color: darken(#fff, 25%);
-}         
-&:focus{
-   color: #fff;
-}
-background-color: darken(color, 25%);
-background-color: lighten(color, 25%); 
-*/
-
-//****BACKGROUND IMG****
-/* 
-&::after{
-  position: absolute;
-  content: "";
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 0;
-  background: url("@img/callBack__phone.png") 0 0/cover no-repeat;
-  width: 70px;
-  height: 70px;
-} 
-*/
-
-//****IMAGE****
-/* <img class="logo" src="@img/logo.svg" alt="logo"> */

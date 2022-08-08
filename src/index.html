@@ -4,12 +4,19 @@
 	"title":"Rhytm"
 	})
 	<body>
-		@@include('html/header.html',{})
-		<main class="main">
-			
-		</main>
-		@@include('html/footer.html',{})
-		@@include('html/modules/popup.html',{})
-		<script src="js/app.min.js"></script>
+		<div class="popup__wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				@@include('html/store.html',{})
+				@@include('html/categories.html',{})
+				@@include('html/brands.html',{})
+				@@include('html/faq.html',{})
+				@@include('html/reviews.html',{})
+				@@include('html/application.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modules/popup.html',{})
+			<script src="js/app.min.js"></script>
+		</div>
 	</body>
 </html>

@@ -1,7 +1,7 @@
 //ScrollTo #1
-const header = document.getElementById("header");
-header.onclick = () => {
-  const goSection = document.querySelector(".modal"); //секция на которую будет переход
+const store = document.getElementById("store");
+store.onclick = () => {
+  const goSection = document.querySelector(".store"); //секция на которую будет переход
   window.scrollTo({
     top: goSection.offsetTop,
     behavior: "smooth",
@@ -9,9 +9,9 @@ header.onclick = () => {
 };
 
 //ScrollTo #2
-const promo = document.getElementById("promo");
-promo.onclick = () => {
-  const goSection = document.querySelector(".modal"); //секция на которую будет переход
+const collections = document.getElementById("collections");
+collections.onclick = () => {
+  const goSection = document.querySelector(".application"); //секция на которую будет переход
   window.scrollTo({
     top: goSection.offsetTop,
     behavior: "smooth",
